@@ -135,56 +135,12 @@
 .ppy-mobile a.admin{color:var(--ppy-accentDk,#A87C83)}
 @media (max-width:820px){.ppy-nav{display:none}.ppy-right .hide-sm{display:none}.ppy-burger{display:inline-flex}.ppy-mobile.open{display:block}}
 /* ===== end header ===== */
-
-  /* ===== PPY footer ===== */
-.ppy-footer{background:#fff;border-top:1px solid var(--ppy-line,#EFE6E8);margin-top:48px;font-family:var(--ppy-fbody,'Poppins',system-ui,sans-serif)}
-.ppy-foot-in{max-width:1100px;margin:0 auto;padding:42px 24px 30px;display:flex;flex-direction:column;align-items:center;gap:18px;text-align:center;color:var(--ppy-ink,#6C7682)}
-.ppy-foot-h{font-family:var(--ppy-fhead,'Playfair Display',Georgia,serif);font-size:24px;color:var(--ppy-accentDk,#A87C83)}
-.ppy-foot-sub{font-size:14px;color:var(--ppy-ink,#6C7682);max-width:440px}
-.ppy-news-form{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;width:100%;max-width:440px}
-.ppy-news-form input{flex:1;min-width:200px;padding:11px 14px;border:1px solid var(--ppy-lineDk,#E2D7D9);border-radius:11px;font:inherit;font-size:14px;outline:none;color:#2A2330}
-.ppy-news-form input:focus{border-color:var(--ppy-accent,#C8A0A6)}
-.ppy-news-form button{background:var(--ppy-accentDk,#A87C83);color:#fff;border:none;border-radius:11px;padding:11px 20px;font:inherit;font-weight:500;font-size:14px;cursor:pointer;white-space:nowrap}
-.ppy-news-form button:disabled{opacity:.6;cursor:default}
-.ppy-news-msg{font-size:13px;min-height:18px;color:var(--ppy-accentDk,#A87C83)}
-.ppy-foot-social{display:flex;gap:14px;align-items:center}
-.ppy-foot-social a{color:var(--ppy-accentDk,#A87C83);display:inline-flex}
-.ppy-foot-social svg{width:22px;height:22px}
-.ppy-foot-links{display:flex;gap:18px;flex-wrap:wrap;justify-content:center;font-size:13px}
-.ppy-foot-links a{color:var(--ppy-ink,#6C7682);text-decoration:none}
-.ppy-foot-links a:hover{color:var(--ppy-accentDk,#A87C83)}
-.ppy-foot-copy{font-size:12px;color:#9A95A0;margin-top:2px}
-/* ===== end footer ===== */
-
-  /* ===== library tier gating ===== */
-.card.locked .thumb{filter:grayscale(.3) opacity(.92)}
-.card .lockpill{position:absolute;top:10px;left:10px;width:30px;height:30px;border-radius:999px;background:rgba(255,255,255,.94);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:14px}
-.lockfig{position:relative;display:inline-flex;align-items:center;justify-content:center;font-size:80px;margin-top:8px}
-.lockfig img{max-height:150px;max-width:100%;object-fit:contain}
-.lockbubble{position:absolute;right:-8px;bottom:-8px;background:var(--rose);color:#fff;border-radius:999px;width:36px;height:36px;display:flex;align-items:center;justify-content:center;font-size:17px}
-.lockcta{text-decoration:none;background:#fff;color:var(--roseDeep);border:1px solid var(--lineDk);border-radius:999px;padding:8px 16px;font-size:13px}
-/* ===== end gating ===== */
 </style>
 </head>
 <body>
-<style id="ppyLoaderCSS">
-#ppyLoader{position:fixed;inset:0;z-index:99999;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;background:#FBF7F6;opacity:1;transition:opacity .45s ease}
-#ppyLoader.hide{opacity:0;pointer-events:none}
-#ppyLoader .ppyl-mark{font-size:52px;line-height:1;animation:ppySpin 1s linear infinite;transform-origin:50% 50%}
-#ppyLoader .ppyl-word{font-family:'Playfair Display',Georgia,serif;color:#A87C83;font-size:14px;letter-spacing:.06em;opacity:.75}
-@keyframes ppySpin{to{transform:rotate(360deg)}}
-@media (prefers-reduced-motion:reduce){#ppyLoader .ppyl-mark{animation:none}}
-</style>
-<div id="ppyLoader" aria-hidden="true">
-  <div class="ppyl-mark">🌸</div>
-  <div class="ppyl-word">Pure Passion Yoga</div>
-</div>
-<script>
-(function(){var el=document.getElementById('ppyLoader');if(!el)return;var done=false;function hide(){if(done)return;done=true;el.classList.add('hide');setTimeout(function(){if(el)el.style.display='none';},520);}window.ppyHideLoader=hide;if(document.readyState==='complete'){setTimeout(hide,180);}else{window.addEventListener('load',function(){setTimeout(hide,180);});}setTimeout(hide,6000);})();
-</script>
 <header class="ppy-header" id="ppyHeader">
   <div class="ppy-bar">
-    <a class="ppy-brand" id="ppyBrand" href="/">
+    <a class="ppy-brand" id="ppyBrand" href="https://ppyoga-app.vercel.app">
       <svg class="mark" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
         <path d="M24 7c2.6 3.2 4 6.7 4 10.2 0 3.8-1.6 7.2-4 9.8-2.4-2.6-4-6-4-9.8C20 13.7 21.4 10.2 24 7Z" fill="#C8A0A6"/>
         <path d="M13 14c3.7 1 6.6 2.9 8.6 5.3 2.2 2.6 3.2 5.8 3.1 9-3.4-.6-6.6-2.2-8.8-4.8-2-2.4-3-5.6-2.9-9.5Z" fill="#a8ad91"/>
@@ -196,17 +152,17 @@
       <span class="wm brand">Pure Passion Yoga</span>
     </a>
     <nav class="ppy-nav" id="ppyNav">
-      <a href="/library">Pose Library</a>
-      <a href="/builder">Sequence Builder</a>
-      <a data-nav="classes" hidden href="/classes">Classes</a>
-      <a data-nav="challenges" hidden href="/challenges">Challenges</a>
-      <a data-nav="shop" hidden href="/shop">Shop</a>
+      <a href="https://ppyoga-app.vercel.app">Pose Library</a>
+      <a href="https://ppyoga-builder.vercel.app">Sequence Builder</a>
+      <a data-nav="classes" hidden href="https://ppyoga-app.vercel.app/classes">Classes</a>
+      <a data-nav="challenges" hidden href="https://ppyoga-app.vercel.app/challenges">Challenges</a>
+      <a href="https://purepassionyoga.com/shop">Shop</a>
       <a href="https://purepassionyoga.com/about">About</a>
     </nav>
     <div class="ppy-right" id="ppyRight">
       <span class="ppy-tier" id="ppyTier" hidden></span>
-      <a class="ppy-btn admin" id="ppyAdmin" hidden href="/admin">Admin</a>
-      <a class="ppy-btn primary" id="ppyAuth" href="/profile">Sign in</a>
+      <a class="ppy-btn admin" id="ppyAdmin" hidden href="https://ppyoga-admin.vercel.app">Admin</a>
+      <a class="ppy-btn primary" id="ppyAuth" href="https://ppyoga-profile.vercel.app">Sign in</a>
       <a class="ppy-btn ghost" id="ppySignout" hidden href="#">Sign out</a>
     </div>
     <button class="ppy-burger" id="ppyBurger" aria-label="Menu">
@@ -214,14 +170,14 @@
     </button>
   </div>
   <div class="ppy-mobile" id="ppyMobile">
-    <a href="/library">Pose Library</a>
-    <a href="/builder">Sequence Builder</a>
-    <a data-nav="classes" hidden href="/classes">Classes</a>
-    <a data-nav="challenges" hidden href="/challenges">Challenges</a>
-    <a data-nav="shop" hidden href="/shop">Shop</a>
+    <a href="https://ppyoga-app.vercel.app">Pose Library</a>
+    <a href="https://ppyoga-builder.vercel.app">Sequence Builder</a>
+    <a data-nav="classes" hidden href="https://ppyoga-app.vercel.app/classes">Classes</a>
+    <a data-nav="challenges" hidden href="https://ppyoga-app.vercel.app/challenges">Challenges</a>
+    <a href="https://purepassionyoga.com/shop">Shop</a>
     <a href="https://purepassionyoga.com/about">About</a>
-    <a class="admin" id="ppyAdminM" hidden href="/admin">Admin</a>
-    <a class="up" id="ppyAuthM" href="/profile">Sign in</a>
+    <a class="admin" id="ppyAdminM" hidden href="https://ppyoga-admin.vercel.app">Admin</a>
+    <a class="up" id="ppyAuthM" href="https://ppyoga-profile.vercel.app">Sign in</a>
     <a class="admin" id="ppySignoutM" hidden href="#">Sign out</a>
   </div>
 </header>
@@ -241,8 +197,8 @@
 const SB = "https://nxjbpgnpblqepathojzr.supabase.co";
 const KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im54amJwZ25wYmxxZXBhdGhvanpyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQ0OTE3MTYsImV4cCI6MjA5MDA2NzcxNn0.0thRMnySyacG_fcFiHlteEk4scwfWrP6HmjSlBdg3Ik";
 const SAMPLE=[{"name": "Mountain Pose", "sanskrit_name": "Tadasana", "pronunciation": "tah-DAHS-uh-nuh", "category": "Standing", "difficulty_level": "Beginner", "image_url": null, "alternate_names": ["Samasthiti", "Standing Mountain Pose"], "primary_movement": "Standing", "yoga_styles": ["Hatha Yoga", "Vinyasa Yoga", "Iyengar Yoga", "Ashtanga Yoga"], "chakras": ["Root Chakra"], "benefit_tags": ["Grounding", "Posture Improvement", "Focus", "Postural Strength", "Alignment"], "body_focus": ["Feet & Ankles", "Legs", "Core", "Spine", "Shoulders"], "muscle_groups": ["Arches of the Feet", "Quadriceps", "Abdominals", "Spinal Erectors", "Deltoids", "Hamstrings", "Core Stabilizers"], "movement_actions": ["Core Stabilization", "Leg Weight Bearing", "Spinal Stabilization", "Grounding", "Postural Alignment"], "short_description": "Mountain Pose is a foundational standing posture that teaches alignment, grounding, and body awareness. It forms the base for many other standing yoga poses.", "anatomy_breakdown": "Mountain Pose engages the muscles of the legs, feet, and core to create a stable upright posture. The quadriceps lift the kneecaps, the glutes and hamstrings support the pelvis, and the spinal erectors lengthen the spine. The feet root downward evenly while the core stabilizes the torso and encourages balanced posture.", "instructions": ["Stand with the feet together or hip-width apart.", "Distribute weight evenly across both feet.", "Lift through the arches and engage the legs without locking the knees.", "Lengthen the tailbone gently toward the floor while lifting through the crown of the head.", "Relax the shoulders and let the arms rest naturally beside the body.", "Keep the gaze steady and the breath smooth."], "benefits": "Improves posture and alignment.\nStrengthens the legs, feet, and core.\nDevelops body awareness and grounding.\nCreates a stable foundation for standing poses.\nEncourages calm focus and steady breathing.", "teaching_cues": ["Press evenly through all four corners of the feet.", "Lift the kneecaps gently without locking the knees.", "Lengthen the spine and broaden the collarbones.", "Relax the shoulders away from the ears.", "Engage the core and stand tall through the crown of the head."], "breath_cues": ["Inhale to lengthen the spine and lift through the crown of the head.", "Exhale to root evenly through the feet and steady the body."], "contraindications": "Practice with support if experiencing dizziness or balance instability.\nStand with feet wider apart if needed for stability.", "modifications": ["Stand with feet hip-width apart instead of together.", "Practice with the back against a wall for alignment feedback.", "Place a yoga block between the thighs to encourage leg engagement."], "advanced_variations": ["Practice with eyes closed to deepen internal awareness.", "Lift the arms overhead while maintaining the same grounded alignment.", "Use as a base for transitions into balance poses."], "affirmation": "I stand strong, steady, and grounded."}, {"name": "Tree Pose", "sanskrit_name": "Vrikshasana", "pronunciation": "vrik-SHAH-suh-nuh", "category": "Standing", "difficulty_level": "Beginner", "image_url": null, "alternate_names": ["Single Leg Balance", "Standing Tree", "Yoga Tree Pose", "Vrksa Pose"], "primary_movement": "Balance", "yoga_styles": ["Hatha Yoga", "Vinyasa Yoga", "Iyengar Yoga", "Ashtanga Yoga"], "chakras": ["Root Chakra", "Heart Chakra"], "benefit_tags": ["Balance", "Focus", "Hip Opening", "Mental Clarity", "Postural Strength"], "body_focus": ["Feet & Ankles", "Legs", "Hips", "Core", "Spine"], "muscle_groups": ["Ankle Stabilizers", "Quadriceps", "Glutes", "Abdominals", "Spinal Erectors", "Hip Rotators", "Core Stabilizers"], "movement_actions": ["Hip External Rotation", "Single-Leg Balance", "Core Stabilization", "Leg Weight Bearing", "Balance"], "short_description": "Tree Pose is a standing balance posture that cultivates stability, focus, and grounded awareness. Rooting through one foot while lifting through the spine builds both physical balance and mental steadiness.", "anatomy_breakdown": "Tree Pose primarily challenges the stabilizing muscles of the standing leg and the postural muscles of the spine.\n\nThe standing foot actively presses into the ground while the ankle stabilizers engage to maintain balance. The quadriceps and gluteal muscles support the standing leg, helping maintain knee and hip stability.\n\nThe lifted leg externally rotates at the hip as the foot presses into the inner thigh or calf of the standing leg.\n\nThe core engages gently to maintain upright posture, while the spinal extensors lengthen the spine upward. The shoulders relax downward as the arms extend overhead or remain at the heart center.", "instructions": ["Begin standing in Mountain Pose.", "Shift your weight into one foot and root firmly through the sole of the standing foot.", "Lift the opposite foot and place it against the inner ankle, calf, or inner thigh of the standing leg. Avoid placing the foot directly on the knee joint.", "Press the lifted foot and standing leg gently toward one another to create stability.", "Bring the hands to prayer position at the heart or extend the arms overhead.", "Lengthen through the spine and soften the shoulders while maintaining steady balance.", "Hold the pose while breathing smoothly, then gently release and repeat on the opposite side."], "benefits": "Tree Pose improves balance, coordination, and concentration.\n\nIt strengthens the legs, ankles, and core muscles while encouraging upright posture.\n\nEnergetically, the pose supports grounding and heart-centered awareness, helping cultivate inner steadiness and calm focus.", "teaching_cues": ["Root through the standing foot like the roots of a tree.", "Lift tall through the crown of the head.", "Draw the inner thigh and foot together for stability.", "Relax the shoulders away from the ears.", "Bring palms together at the heart or extend arms overhead."], "breath_cues": ["Inhale to lengthen through the spine.", "Exhale to root deeper through the standing foot.", "Maintain smooth, steady breathing throughout the posture."], "contraindications": "Avoid placing the lifted foot directly against the knee joint.\nUse caution if experiencing ankle, knee, or hip injuries.\nPractice near a wall or chair if balance is limited.", "modifications": ["Place the lifted foot on the ankle or calf instead of the thigh.", "Use a wall or chair for support.", "Keep hands at the heart instead of raising them overhead."], "advanced_variations": ["Close the eyes to increase the balance challenge.", "Extend arms overhead and interlace fingers.", "Transition into Half Lotus Tree Pose."], "affirmation": "I am steady, rooted, and open."}, {"name": "Child’s Pose", "sanskrit_name": "Balasana", "pronunciation": "bah-LAHS-uh-nuh", "category": "Restorative", "difficulty_level": "Beginner", "image_url": null, "alternate_names": ["Extended Child's Pose", "Resting Child's Pose"], "primary_movement": "Spinal Movement", "yoga_styles": ["Hatha Yoga", "Vinyasa Yoga", "Yin Yoga", "Restorative Yoga", "Chair Yoga", "Prenatal Yoga"], "chakras": ["Root Chakra"], "benefit_tags": ["Relaxation", "Stress Relief", "Hip Opening", "Spine Lengthening", "Nervous System Calming"], "body_focus": ["Hips", "Lower Back", "Spine", "Shoulders", "Knees"], "muscle_groups": ["Glutes", "Hip Flexors", "Spinal Erectors", "Latissimus Dorsi"], "movement_actions": ["Spinal Flexion", "Hip Flexion", "Shoulder Flexion", "Knee Flexion", "Grounding"], "short_description": "Child's Pose (Balasana) is a gentle resting posture that stretches the back body, relaxes the hips, and calms the nervous system. Often used as a pause between more active poses, it allows the body to release tension while encouraging slow, steady breathing.", "anatomy_breakdown": "Child's Pose places the body in a position of gentle spinal flexion. The hips move into deep flexion while the knees bend and the torso folds forward over the thighs. The spine lengthens as the back muscles soften, allowing the erector spinae to release tension.\n\nThe hips and gluteal muscles relax as the pelvis settles toward the heels. When the arms extend forward, the shoulders move into flexion, creating a mild stretch across the latissimus dorsi and upper back.\n\nBreathing in this position expands the back ribs and lower lungs, promoting parasympathetic nervous system activation and deep relaxation.", "instructions": ["Begin kneeling with the big toes touching and knees together or slightly apart.", "Sit the hips back toward the heels while folding the torso forward.", "Allow the forehead to rest on the mat or a prop.", "Extend the arms forward with palms down, or rest them alongside the legs.", "Keep the neck relaxed and shoulders soft.", "Breathe slowly and evenly while allowing the back body to expand with each inhale."], "benefits": "Child's Pose gently stretches the spine, hips, and ankles while encouraging deep relaxation. The posture calms the nervous system and helps release tension in the back body.\n\nIt promotes mindful breathing by expanding the back ribs and diaphragm. The pose can relieve fatigue, reduce stress, and create a sense of grounding and safety in the body.\n\nBecause of its restful nature, Child's Pose is frequently used between stronger poses to restore energy and regulate breath.", "teaching_cues": ["Sit hips back toward heels", "Fold torso gently over thighs", "Extend arms forward or rest alongside legs", "Relax forehead toward mat", "Breathe deeply into the back ribs"], "breath_cues": ["Inhale to expand the back ribs and lengthen the spine.", "Exhale to soften the torso and release the hips toward the heels."], "contraindications": "Avoid or modify the pose if experiencing knee injuries or significant knee discomfort.\nStudents with ankle sensitivity may place a folded blanket under the ankles.\nDuring pregnancy, widen the knees significantly to create space for the abdomen.", "modifications": ["Place a bolster or stacked blankets under the torso for support.", "Use a block or folded blanket under the forehead.", "Keep the knees wide for additional comfort in the hips.", "Place a rolled blanket behind the knees if there is knee sensitivity."], "advanced_variations": ["Extended Child's Pose with arms actively reaching forward", "Side Stretch Child's Pose (arms walking to one side)", "Thread the Needle variation from Child's Pose"], "affirmation": "I release and surrender into calm."}, {"name": "Warrior II", "sanskrit_name": "Virabhadrasana II", "pronunciation": "veer-ah-bah-DRAHS-ah-nah two", "category": "Standing", "difficulty_level": "Beginner–Intermediate", "image_url": null, "alternate_names": ["Warrior Pose II"], "primary_movement": "Hip Abduction", "yoga_styles": ["Hatha Yoga", "Vinyasa Yoga", "Power Yoga", "Ashtanga Yoga", "Slow Flow Yoga"], "chakras": ["Solar Plexus Chakra"], "benefit_tags": ["Strength", "Balance", "Focus", "Vitality", "Leg Strength", "Posture Improvement", "Hip Opening", "Stability", "Endurance"], "body_focus": ["Legs", "Hips", "Core", "Spine", "Shoulders"], "muscle_groups": ["Quadriceps", "Glutes", "Abdominals", "Deltoids", "Inner Thighs", "Core Stabilizers", "Spinal Erectors"], "movement_actions": ["Hip Abduction", "Shoulder Abduction", "Core Stabilization", "Leg Weight Bearing", "Knee Flexion", "Hip External Rotation", "Postural Alignment"], "short_description": "Warrior II (Virabhadrasana II) is a powerful standing pose that builds strength and endurance in the legs while opening the hips and chest. The pose cultivates stability, focus, and grounded energy through a strong foundation.", "anatomy_breakdown": "Warrior II develops strong engagement through the legs and hips while maintaining a stable and upright torso. The front leg bends deeply, activating the quadriceps and glutes, while the back leg remains straight and grounded.\n\nThe hips externally rotate and open toward the side of the mat. The inner thighs and hip stabilizers work to maintain alignment. The arms extend outward from the shoulders, engaging the deltoids while the spine remains upright and supported by the core.\n\nThe posture emphasizes grounded strength and balance between stability and openness.", "instructions": ["Stand with the feet wide apart.", "Turn the front foot forward and rotate the back foot slightly inward.", "Bend the front knee until it stacks over the ankle.", "Extend both arms out to the sides at shoulder height.", "Keep the torso upright and centered over the hips.", "Gaze steadily over the front fingertips.", "Keep the torso upright and gaze over the front hand.", "Press firmly through both feet while maintaining steady breathing."], "benefits": "Warrior II strengthens the legs, hips, and core while building endurance and stability. The pose encourages grounding through the feet while promoting openness across the hips and chest.\n\nPracticing this posture helps develop concentration and resilience, supporting both physical strength and mental focus.", "teaching_cues": ["Step the feet wide apart", "Turn the front foot forward and back foot slightly inward", "Bend the front knee over the ankle", "Extend the arms out to the sides at shoulder height", "Gaze over the front fingertips"], "breath_cues": ["Inhale to lengthen the spine and broaden the chest.", "Exhale to ground through the feet and stabilize the stance."], "contraindications": "Students with knee injuries should avoid bending the front knee too deeply. Those with hip or balance challenges may shorten the stance or practice near a wall for support.", "modifications": ["Shorten the stance for greater stability.", "Rest hands on hips if shoulder fatigue occurs.", "Practice with the back heel against a wall for support."], "advanced_variations": ["Reverse Warrior", "Extended Side Angle Pose", "Bound Warrior II"], "affirmation": "I remain grounded and steady while expanding with strength."}, {"name": "Triangle Pose", "sanskrit_name": "Trikonasana", "pronunciation": "tree-koh-NAH-sah-nah", "category": "Standing", "difficulty_level": "Beginner–Intermediate", "image_url": null, "alternate_names": ["Extended Triangle Pose"], "primary_movement": "Spinal Lateral Flexion", "yoga_styles": ["Hatha Yoga", "Vinyasa Yoga", "Iyengar Yoga", "Power Yoga", "Ashtanga Yoga", "Slow Flow Yoga"], "chakras": ["Heart Chakra"], "benefit_tags": ["Flexibility", "Balance", "Focus", "Spinal Mobility", "Hip Opening", "Posture Improvement", "Chest Opening"], "body_focus": ["Legs", "Hips", "Spine", "Shoulders", "Chest"], "muscle_groups": ["Hamstrings", "Quadriceps", "Glutes", "Obliques", "Deltoids", "Spinal Erectors", "Hip Adductors"], "movement_actions": ["Hip Abduction", "Spinal Lateral Flexion", "Shoulder Abduction", "Leg Weight Bearing", "Hip External Rotation", "Postural Alignment"], "short_description": "Triangle Pose (Trikonasana) is a foundational standing pose that stretches the legs and hips while lengthening the spine and opening the chest. The posture develops balance, stability, and flexibility through a strong and grounded stance.", "anatomy_breakdown": "Triangle Pose lengthens the sides of the torso while creating a strong base through the legs. The front leg remains straight as the hips hinge and the torso moves into lateral flexion.\n\nThe hamstrings and inner thighs lengthen while the glutes and quadriceps stabilize the legs. The spine extends laterally as the chest rotates open toward the ceiling.\n\nThe shoulders stack vertically, encouraging expansion across the collarbones and engagement of the upper back muscles.", "instructions": ["Stand with the feet wide apart.", "Turn the front foot forward and the back foot slightly inward.", "Extend both arms out at shoulder height.", "Reach forward through the front arm while hinging at the hip.", "Lower the front hand to the shin, ankle, block, or floor.", "Extend the top arm upward and rotate the chest open."], "benefits": "Triangle Pose stretches the hamstrings, hips, and spine while strengthening the legs and core. The posture improves balance and posture awareness while promoting openness across the chest and shoulders.\n\nRegular practice of Triangle Pose supports flexibility and stability, helping to develop both mobility and strength in the lower body.", "teaching_cues": ["Step the feet wide apart", "Turn the front foot forward and back foot slightly inward", "Extend the arms out to the sides", "Reach forward through the front arm", "Lower the hand to the shin, block, or floor", "Rotate the chest open and extend the top arm upward"], "breath_cues": ["Inhale to lengthen the spine and broaden the chest.", "Exhale to deepen into the lateral stretch."], "contraindications": "Students with hamstring or lower back injuries should avoid forcing the depth of the stretch. Those with neck sensitivity may keep the gaze forward instead of upward.", "modifications": ["Place the lower hand on a yoga block.", "Keep the top hand on the hip instead of reaching upward.", "Practice with the back body against a wall for alignment."], "advanced_variations": ["Bound Triangle Pose", "Revolved Triangle Pose", "Triangle with overhead arm extension"], "affirmation": "I create space and openness in my body with strength and stability."}, {"name": "Pigeon Pose", "sanskrit_name": "Kapotasana", "pronunciation": "kah-poh-TAH-sah-nah", "category": "Hip Opener", "difficulty_level": "Intermediate", "image_url": null, "alternate_names": ["Sleeping Pigeon (variation); One-Legged Pigeon Pose"], "primary_movement": "Hip External Rotation", "yoga_styles": ["Hatha Yoga", "Vinyasa Yoga", "Yin Yoga", "Restorative Yoga", "Slow Flow Yoga"], "chakras": ["Sacral Chakra"], "benefit_tags": ["Hip Opening", "Flexibility", "Stress Relief", "Spinal Mobility", "Relaxation", "Emotional Release"], "body_focus": ["Hips", "Glutes", "Legs", "Spine", "Lower Back"], "muscle_groups": ["Glutes", "Hip Rotators", "Hip Flexors", "Hamstrings", "Piriformis"], "movement_actions": ["Hip External Rotation", "Hip Extension", "Spinal Flexion", "Postural Alignment", "Grounding"], "short_description": "Pigeon Pose is a deep hip-opening posture that stretches the glutes and hip rotators while promoting relaxation and release. It is commonly used in cool-down sequences and restorative practices.", "anatomy_breakdown": "Pigeon Pose creates deep external rotation in the front hip while extending the back leg behind. The glutes and hip rotators of the front leg lengthen, while the hip flexors of the back leg stretch.\n\nThe pelvis moves toward the floor, supported by props if needed. The spine can remain upright or fold forward, increasing intensity in the hips.\n\nThe pose targets deep connective tissues and is often associated with both physical and emotional release.", "instructions": ["From Downward Dog, bring one knee forward toward the wrist.", "Extend the back leg straight behind you.", "Square the hips toward the front of the mat.", "Lower the hips toward the floor or support them with a block.", "Stay upright or fold forward over the front leg."], "benefits": "Pigeon Pose deeply stretches the hips and glutes while improving flexibility and mobility. It helps release tension stored in the hips and can promote relaxation.\n\nThe pose is also effective for counteracting tightness from sitting and can support emotional release.", "teaching_cues": ["From Downward Dog, bring one knee forward toward the wrist", "Extend the back leg straight behind", "Square the hips toward the front", "Lower the hips toward the floor", "Stay upright or fold forward over the front leg"], "breath_cues": ["Inhale to lengthen the spine.", "Exhale to soften and release into the hips."], "contraindications": "Students with knee injuries should avoid this pose or modify heavily. Those with hip or lower back discomfort should use props and avoid forcing the stretch.", "modifications": ["Place a block or blanket under the front hip.", "Keep the torso upright.", "Use a bolster under the chest in forward fold."], "advanced_variations": ["King Pigeon Pose", "Pigeon with backbend", "Deep forward fold variation"], "affirmation": "I release tension and create space within."}];
-let POSES=[], fav=new Set(), LIB={};
-const F={search:"",category:"",difficulty:"",body:"",style:""};
+let POSES=[], fav=new Set(), LIB={}, UID=null, TOKEN=null;
+const F={search:"",category:"",difficulty:"",body:"",style:"",favonly:false};
 const esc=s=>(s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const arr=v=>Array.isArray(v)?v:[];
 const paras=t=>(t||"").split(/\n{2,}/).map(s=>s.trim()).filter(Boolean);
@@ -254,6 +210,7 @@ async function load(){
     if(!r.ok) throw new Error("HTTP "+r.status);
     POSES=await r.json();
     document.getElementById("state").style.display="none";
+    if(UID) await loadFavorites();
     buildFilters(); render(); renderPOTD();
   }catch(e){
     POSES=SAMPLE;
@@ -270,14 +227,22 @@ function buildFilters(){
     ["Body Focus","body",uniq(p=>p.body_focus)],
     ["Yoga Style","style",uniq(p=>p.yoga_styles)],
   ];
-  document.getElementById("filters").innerHTML=rows.map(([label,key,vals])=>`
+  const favRow = UID ? `
+    <div class="frow"><div class="flabel">Show</div><div class="chips">
+      <span class="chip ${!F.favonly?"on":""}" id="favAll">All poses</span>
+      <span class="chip ${F.favonly?"on":""}" id="favOnly">\u2665 Favorites (${fav.size})</span>
+    </div></div>` : "";
+  document.getElementById("filters").innerHTML=favRow+rows.map(([label,key,vals])=>`
     <div class="frow"><div class="flabel">${label}</div><div class="chips">
       <span class="chip ${F[key]===""?"on":""}" data-k="${key}" data-v="">All</span>
       ${vals.map(([v,c])=>`<span class="chip ${F[key]===v?"on":""}" data-k="${key}" data-v="${esc(v)}">${esc(v)} (${c})</span>`).join("")}
     </div></div>`).join("");
-  document.querySelectorAll(".chip").forEach(el=>el.onclick=()=>{F[el.dataset.k]=el.dataset.v;buildFilters();render();});
+  document.querySelectorAll(".chip[data-k]").forEach(el=>el.onclick=()=>{F[el.dataset.k]=el.dataset.v;buildFilters();render();});
+  var fa=document.getElementById("favAll"); if(fa) fa.onclick=()=>{F.favonly=false;buildFilters();render();};
+  var fo=document.getElementById("favOnly"); if(fo) fo.onclick=()=>{F.favonly=true;buildFilters();render();};
 }
 function match(p){
+  if(F.favonly&&!fav.has(String(p.id)))return false;
   if(F.category&&p.category!==F.category)return false;
   if(F.difficulty&&p.difficulty_level!==F.difficulty)return false;
   if(F.body&&!arr(p.body_focus).includes(F.body))return false;
@@ -291,9 +256,8 @@ function render(){
   document.getElementById("grid").innerHTML=list.map((p,i)=>{
     const idx=POSES.indexOf(p);const [bg,fg]=badgeColor(p.difficulty_level||"");
     const thumb=p.image_url?`<img src="${esc(p.image_url)}" alt="${esc(p.name)}">`:(p.emoji||"🧘");
-    return `<div class="card${canOpen(p)?"":" locked"}" data-i="${idx}">
-      <div class="heart ${fav.has(idx)?"on":""}" data-fav="${idx}">♥</div>
-      ${canOpen(p)?"":'<div class="lockpill">🔒</div>'}
+    return `<div class="card" data-i="${idx}">
+      <div class="heart ${fav.has(String(p.id))?"on":""}" data-fav="${esc(String(p.id||""))}">\u2665</div>
       <div class="thumb">${thumb}</div>
       <div class="cbody">
         <div class="cname">${esc(p.name)}</div>
@@ -303,18 +267,17 @@ function render(){
       </div></div>`;
   }).join("");
   document.querySelectorAll(".card").forEach(el=>el.onclick=e=>{if(e.target.dataset.fav!==undefined)return;openDetail(POSES[+el.dataset.i]);});
-  document.querySelectorAll(".heart").forEach(el=>el.onclick=e=>{e.stopPropagation();const i=+el.dataset.fav;fav.has(i)?fav.delete(i):fav.add(i);render();});
+  document.querySelectorAll(".heart").forEach(el=>el.onclick=e=>{e.stopPropagation();toggleFav(el.dataset.fav);});
 }
 function chips(items,sage){return arr(items).length?`<div class="tags">${arr(items).map(x=>`<span class="tag ${sage?"sage":""}">${esc(x)}</span>`).join("")}</div>`:'<span style="color:var(--taupe)">—</span>';}
 function bullets(items){return arr(items).length?`<ul class="clean">${arr(items).map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`:"";}
 function steps(items){return arr(items).length?`<ol class="steps">${arr(items).map(x=>`<li>${esc(x)}</li>`).join("")}</ol>`:"";}
 function sec(title,html,full){return `<div class="sec ${full?"full":""}"><h3>${title}</h3>${html}</div>`;}
 function openDetail(p){
-  if(!canOpen(p)) return openLock(p);
   const fig=p.image_url?`<img src="${esc(p.image_url)}" alt="${esc(p.name)}">`:(p.emoji||"🧘");
   const facts=[["Category",p.category],["Difficulty",p.difficulty_level],["Primary Movement",p.primary_movement]].filter(f=>f[1]);
   const html=`<div class="overlay" id="ov"><div class="modal" onclick="event.stopPropagation()">
-    <div class="mtop"><button class="close" onclick="closeModal()">Close</button></div>
+    <div class="mtop">${p.id?`<button class="close" id="mFav" onclick="toggleFavFromModal('${esc(String(p.id))}')">${fav.has(String(p.id))?"\u2665 Favorited":"\u2661 Favorite"}</button>`:""}<button class="close" onclick="closeModal()">Close</button></div>
     <div class="mbody">
       <div class="mhead">
         <h1 class="mtitle">${esc(p.name)}</h1>
@@ -355,7 +318,7 @@ document.getElementById("search").addEventListener("input",e=>{F.search=e.target
 function darken(hex,f){const m=hex.replace('#','');const n=m.length===3?m.split('').map(c=>c+c).join(''):m;const r=Math.round(parseInt(n.slice(0,2),16)*f),g=Math.round(parseInt(n.slice(2,4),16)*f),b=Math.round(parseInt(n.slice(4,6),16)*f);return '#'+[r,g,b].map(x=>Math.min(255,x).toString(16).padStart(2,'0')).join('');}
 function applyDesign(d){
   if(!d)return;const root=document.documentElement.style;
-  if(d.color_primary){root.setProperty('--rose',d.color_primary);root.setProperty('--roseTitle',d.color_primary);root.setProperty('--roseDeep',d.color_primary);root.setProperty('--chipFg',darken(d.color_primary,0.82));}
+  if(d.color_primary){root.setProperty('--rose',d.color_primary);root.setProperty('--roseTitle',d.color_primary);root.setProperty('--roseDeep',darken(d.color_primary,0.82));root.setProperty('--chipFg',darken(d.color_primary,0.82));}
   if(d.color_secondary){root.setProperty('--sage',d.color_secondary);root.setProperty('--sageFg',darken(d.color_secondary,0.78));}
   if(d.color_page_bg)root.setProperty('--stage',d.color_page_bg);
   if(d.color_surface)root.setProperty('--paper',d.color_surface);
@@ -387,73 +350,55 @@ function renderPOTD(){
   const b=document.getElementById('potdBtn');if(b)b.onclick=()=>openDetail(p);
 }
 async function loadLib(){try{const r=await fetch(`${SB}/rest/v1/app_settings?key=eq.library&select=value`,{headers:{apikey:KEY,Authorization:"Bearer "+KEY}});const j=await r.json();LIB=(j&&j[0]&&j[0].value)||{};renderPOTD();}catch(e){}}
-
-/* ===== tier-gated access ===== */
-let TIER=null, FULL=false, FULL_TIERS=["teacher","ultimate"], WEBSITE="https://purepassionyoga.com";
-function canOpen(p){ return FULL || !!(p&&p.is_free); }
-function readSess(){
-  try{ var raw=localStorage.getItem("sb-nxjbpgnpblqepathojzr-auth-token"); if(!raw) return null;
-    if(raw.indexOf("base64-")===0) raw=decodeURIComponent(escape(atob(raw.slice(7))));
-    var s=JSON.parse(raw); if(s&&s.access_token&&s.user&&s.user.id) return s; }catch(e){}
+function readLibSession(){
+  try{
+    var raw=localStorage.getItem("sb-"+REF+"-auth-token");
+    if(!raw) return null;
+    if(raw.indexOf("base64-")===0){ raw=decodeURIComponent(escape(atob(raw.slice(7)))); }
+    var s=JSON.parse(raw);
+    if(s && s.access_token && s.user && s.user.id) return s;
+  }catch(e){}
   return null;
 }
-async function loadAccess(){
+function initAuth(){ var s=readLibSession(); if(s){ UID=s.user.id; TOKEN=s.access_token; } }
+async function loadFavorites(){
   try{
-    var r=await fetch(`${SB}/rest/v1/app_settings?select=key,value&key=in.(design,site)`,{headers:{apikey:KEY,Authorization:"Bearer "+KEY}});
-    var rows=await r.json(); var m={}; (rows||[]).forEach(function(x){m[x.key]=x.value||{};});
-    if(m.site&&Array.isArray(m.site.library_full_tiers)) FULL_TIERS=m.site.library_full_tiers;
-    if(m.design&&m.design.website_url) WEBSITE=m.design.website_url;
+    const r=await fetch(`${SB}/rest/v1/favorites?select=pose_id&user_id=eq.${UID}`,{headers:{apikey:KEY,Authorization:"Bearer "+TOKEN}});
+    if(!r.ok) return;
+    const j=await r.json();
+    fav=new Set((j||[]).map(x=>String(x.pose_id)));
   }catch(e){}
-  var sess=readSess();
-  if(sess){
-    try{ var pr=await fetch(`${SB}/rest/v1/profiles?id=eq.${encodeURIComponent(sess.user.id)}&select=tier`,{headers:{apikey:KEY,Authorization:"Bearer "+sess.access_token}});
-      var pj=await pr.json(); TIER=(pj&&pj[0]&&pj[0].tier)||null; }catch(e){}
+}
+let _libToastT;
+function libToast(m){
+  var t=document.getElementById("libToast");
+  if(!t){ t=document.createElement("div"); t.id="libToast"; t.style.cssText="position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:var(--roseDeep,#A87C83);color:#fff;padding:10px 18px;border-radius:10px;font-size:13px;z-index:120;opacity:0;transition:.25s;box-shadow:0 8px 24px rgba(0,0,0,.15)"; document.body.appendChild(t); }
+  t.textContent=m; t.style.opacity="1"; clearTimeout(_libToastT); _libToastT=setTimeout(function(){t.style.opacity="0";},2600);
+}
+async function setFav(pid, want){
+  pid=String(pid||""); if(!pid) return false;
+  if(!UID){ libToast("Sign in to save favorites \u2014 visit your profile to sign in."); return false; }
+  if(want) fav.add(pid); else fav.delete(pid);
+  try{
+    let r;
+    if(want) r=await fetch(`${SB}/rest/v1/favorites`,{method:"POST",headers:{apikey:KEY,Authorization:"Bearer "+TOKEN,"Content-Type":"application/json",Prefer:"resolution=merge-duplicates"},body:JSON.stringify({user_id:UID,pose_id:pid})});
+    else r=await fetch(`${SB}/rest/v1/favorites?user_id=eq.${UID}&pose_id=eq.${pid}`,{method:"DELETE",headers:{apikey:KEY,Authorization:"Bearer "+TOKEN}});
+    if(!r.ok) throw new Error("HTTP "+r.status);
+    return true;
+  }catch(e){
+    if(want) fav.delete(pid); else fav.add(pid);
+    libToast("Couldn't update favorite \u2014 try again.");
+    return false;
   }
-  FULL = !!(TIER && FULL_TIERS.indexOf(TIER)>=0);
-  render();
 }
-function tierLabel(){ return (FULL_TIERS.length?FULL_TIERS:["teacher","ultimate"]).map(function(t){return t.charAt(0).toUpperCase()+t.slice(1);}).join(" & "); }
-function openLock(p){
-  var freeN=POSES.filter(function(x){return x.is_free;}).length, total=POSES.length;
-  var fig=p.image_url?`<img src="${esc(p.image_url)}" alt="${esc(p.name)}">`:(p.emoji||"🧘");
-  var html=`<div class="overlay" id="ov"><div class="modal" onclick="event.stopPropagation()" style="max-width:540px">
-    <div class="mtop"><button class="close" onclick="closeModal()">Close</button></div>
-    <div class="mbody" style="text-align:center;padding:8px 28px 44px">
-      <div class="lockfig">${fig}<span class="lockbubble">🔒</span></div>
-      <h1 class="mtitle" style="font-size:30px">${esc(p.name)}</h1>
-      <div class="msans">${esc(p.sanskrit_name||"")}</div>
-      <p style="max-width:400px;margin:18px auto 6px;color:var(--body);line-height:1.65">This pose is part of <b>${esc(tierLabel())}</b> access. Explore our ${freeN} free pose${freeN===1?"":"s"} anytime — or unlock all ${total} poses with a membership.</p>
-      <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:18px">
-        <a class="potd-btn" style="text-decoration:none" href="/pricing">View memberships</a>
-        <a class="lockcta" href="/profile">Sign in</a>
-      </div>
-    </div></div></div>`;
-  var root=document.getElementById("modalRoot"); root.innerHTML=html;
-  document.getElementById("ov").onclick=closeModal; document.body.style.overflow="hidden";
+async function toggleFav(pid){ const want=!fav.has(String(pid)); await setFav(pid,want); buildFilters(); render(); }
+function toggleFavFromModal(pid){
+  if(!UID){ libToast("Sign in to save favorites \u2014 visit your profile to sign in."); return; }
+  toggleFav(pid).then(function(){ var b=document.getElementById("mFav"); if(b) b.innerHTML=fav.has(String(pid))?"\u2665 Favorited":"\u2661 Favorite"; });
 }
-
-loadDesign();loadLib();loadAccess();load();
+initAuth();loadDesign();loadLib();load();
 </script>
-<footer class="ppy-footer" id="ppyFooter">
-  <div class="ppy-foot-in">
-    <div id="ppyNews" hidden style="display:flex;flex-direction:column;align-items:center;gap:10px;width:100%">
-      <div class="ppy-foot-h" id="ppyNewsH">Stay in the flow</div>
-      <div class="ppy-foot-sub" id="ppyNewsSub">Sequences, classes &amp; studio news — straight to your inbox.</div>
-      <div class="ppy-news-form">
-        <input id="ppyNewsEmail" type="email" placeholder="you@email.com" autocomplete="email"/>
-        <button id="ppyNewsBtn">Subscribe</button>
-      </div>
-      <div class="ppy-news-msg" id="ppyNewsMsg"></div>
-    </div>
-    <div class="ppy-foot-social" id="ppySocial"></div>
-    <div class="ppy-foot-links">
-      <a href="/legal">Legal</a>
-      <a data-nav="shop" hidden href="/shop">Shop</a>
-      <a href="https://purepassionyoga.com/about">About</a>
-    </div>
-    <div class="ppy-foot-copy" id="ppyCopy">© 2026 Pure Passion Yoga</div>
-  </div>
-</footer>
+
 <script>
 /* ===== PPY adaptive header controller =====
    Self-contained, no external deps. Cross-origin safe.
@@ -480,14 +425,6 @@ loadDesign();loadLib();loadAccess();load();
     .then(function(rows){
       var map={}; (rows||[]).forEach(function(x){map[x.key]=x.value||{};});
       var d=map.design||{}, site=map.site||{};
-      (function(){ var R=document.documentElement.style, P=d.color_primary, S=d.color_secondary, f=function(k,v){ if(v) R.setProperty(k,v); };
-        if(P){ ['--ppy-accent','--ppy-accentDk','--rose','--roseDeep','--roseTitle','--clay','--clayDk','--head','--aub'].forEach(function(k){ R.setProperty(k,P); }); }
-        f('--ppy-sage',S); f('--sage',S);
-        f('--ppy-ink',d.color_body_text); f('--ink',d.color_body_text);
-        f('--ppy-bg',d.color_page_bg); f('--bg',d.color_page_bg);
-        f('--ppy-surface',d.color_surface); f('--card',d.color_surface); f('--field',d.color_surface);
-        f('--ppy-muted',d.color_secondary_text); f('--muted',d.color_secondary_text);
-      })();
       if(d.app_name){ document.querySelectorAll(".ppy-brand .wm").forEach(function(e){e.textContent=d.app_name;}); }
       if(d.logo_url){
         document.querySelectorAll(".ppy-brand").forEach(function(b){
@@ -499,7 +436,6 @@ loadDesign();loadLib();loadAccess();load();
       }
       if(site.classes_enabled)    document.querySelectorAll("[data-nav='classes']").forEach(function(e){e.hidden=false;});
       if(site.challenges_enabled) document.querySelectorAll("[data-nav='challenges']").forEach(function(e){e.hidden=false;});
-      fetch(SB+"/rest/v1/app_settings?select=value&key=eq.shop",{headers:{apikey:KEY,Authorization:"Bearer "+KEY}}).then(function(r){return r.ok?r.json():[];}).then(function(rows){if(rows&&rows[0]&&rows[0].value&&rows[0].value.enabled){document.querySelectorAll("[data-nav='shop']").forEach(function(e){e.hidden=false;});}}).catch(function(){});
     }).catch(function(){});
 
   function readSession(){
@@ -534,60 +470,6 @@ loadDesign();loadLib();loadAccess();load();
       if(p.tier){ var t=$("ppyTier"); if(t){ t.textContent=p.tier; t.hidden=false; } }
       if(p.is_admin){ var a=$("ppyAdmin"); if(a) a.hidden=false; var am=$("ppyAdminM"); if(am) am.hidden=false; }
     }).catch(function(){});
-})();
-</script>
-
-<script>
-/* ===== PPY footer controller (newsletter + social, admin-driven) ===== */
-(function(){
-  var SB="https://nxjbpgnpblqepathojzr.supabase.co", KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im54amJwZ25wYmxxZXBhdGhvanpyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQ0OTE3MTYsImV4cCI6MjA5MDA2NzcxNn0.0thRMnySyacG_fcFiHlteEk4scwfWrP6HmjSlBdg3Ik";
-  var $=function(id){return document.getElementById(id);};
-  var ICON={
-    instagram:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.9.07 1.2.06 1.8.25 2.2.42.6.22 1 .48 1.4.9.43.43.7.83.92 1.42.17.4.36 1 .42 2.2.06 1.3.07 1.7.07 4.9s0 3.6-.07 4.9c-.06 1.2-.25 1.8-.42 2.2-.22.6-.49 1-.92 1.42-.42.42-.83.7-1.42.92-.4.17-1 .36-2.2.42-1.3.06-1.7.07-4.9.07s-3.6 0-4.9-.07c-1.2-.06-1.8-.25-2.2-.42a3.8 3.8 0 0 1-1.42-.92 3.8 3.8 0 0 1-.92-1.42c-.17-.4-.36-1-.42-2.2C2.21 15.6 2.2 15.2 2.2 12s0-3.6.07-4.9c.06-1.2.25-1.8.42-2.2.22-.6.49-1 .92-1.42.42-.42.83-.7 1.42-.92.4-.17 1-.36 2.2-.42C8.4 2.21 8.8 2.2 12 2.2Zm0 3.06A6.74 6.74 0 1 0 18.74 12 6.74 6.74 0 0 0 12 5.26Zm0 11.12A4.38 4.38 0 1 1 16.38 12 4.38 4.38 0 0 1 12 16.38Zm6.96-11.39a1.58 1.58 0 1 1-1.58-1.57 1.58 1.58 0 0 1 1.58 1.57Z"/></svg>',
-    facebook:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.09 10.13 24v-8.44H7.08v-3.49h3.05V9.43c0-3.01 1.79-4.67 4.53-4.67 1.31 0 2.69.24 2.69.24v2.95h-1.52c-1.49 0-1.96.93-1.96 1.87v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.09 24 18.1 24 12.07Z"/></svg>',
-    youtube:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.12-2.12C19.5 3.55 12 3.55 12 3.55s-7.5 0-9.38.53A3 3 0 0 0 .5 6.2 31.2 31.2 0 0 0 0 12a31.2 31.2 0 0 0 .5 5.8 3 3 0 0 0 2.12 2.12c1.88.53 9.38.53 9.38.53s7.5 0 9.38-.53a3 3 0 0 0 2.12-2.12A31.2 31.2 0 0 0 24 12a31.2 31.2 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.2 3.6-6.2 3.6Z"/></svg>',
-    pinterest:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.08 3.16 9.42 7.62 11.16-.1-.95-.2-2.4.04-3.44.22-.93 1.4-5.94 1.4-5.94s-.36-.72-.36-1.78c0-1.66.97-2.9 2.17-2.9 1.02 0 1.52.77 1.52 1.69 0 1.03-.66 2.57-1 4-.28 1.2.6 2.18 1.78 2.18 2.14 0 3.78-2.26 3.78-5.51 0-2.88-2.07-4.9-5.02-4.9-3.42 0-5.43 2.56-5.43 5.21 0 1.03.4 2.14.9 2.74.1.12.11.22.08.34l-.33 1.36c-.05.22-.18.27-.4.16-1.5-.7-2.43-2.88-2.43-4.64 0-3.78 2.75-7.25 7.92-7.25 4.16 0 7.39 2.96 7.39 6.92 0 4.13-2.6 7.45-6.22 7.45-1.21 0-2.35-.63-2.74-1.38l-.75 2.84c-.27 1.04-1 2.35-1.49 3.15A12 12 0 1 0 12 0Z"/></svg>',
-    tiktok:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.82a4.28 4.28 0 0 1-1.05-2.82h-3.1v12.6a2.59 2.59 0 0 1-2.58 2.5 2.59 2.59 0 0 1-.7-5.08v-3.16a5.68 5.68 0 0 0 .7 11.32 5.68 5.68 0 0 0 5.68-5.68V8.9a7.34 7.34 0 0 0 4.3 1.38v-3.1a4.28 4.28 0 0 1-3.25-1.36Z"/></svg>'
-  };
-  function emailOK(s){ return /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(s); }
-  fetch(SB+"/rest/v1/app_settings?select=key,value&key=in.(design,site)",{headers:{apikey:KEY,Authorization:"Bearer "+KEY}})
-    .then(function(r){return r.ok?r.json():[];}).then(function(rows){
-      var m={}; (rows||[]).forEach(function(x){m[x.key]=x.value||{};});
-      var d=m.design||{}, site=m.site||{}, nl=site.newsletter||{}, so=site.social||{};
-      var name=d.app_name||"Pure Passion Yoga";
-      var copy=$("ppyCopy"); if(copy) copy.textContent="© "+new Date().getFullYear()+" "+name;
-      var news=$("ppyNews");
-      if(news){
-        if(nl.enabled===false){ news.hidden=true; }
-        else { news.hidden=false;
-          if(nl.heading) $("ppyNewsH").textContent=nl.heading;
-          if(nl.sub) $("ppyNewsSub").textContent=nl.sub;
-          if(nl.button) $("ppyNewsBtn").textContent=nl.button;
-        }
-      }
-      var wrap=$("ppySocial");
-      if(wrap){ var order=["instagram","facebook","youtube","pinterest","tiktok"], html="";
-        order.forEach(function(k){ var u=so[k]; if(u){ html+='<a href="'+u+'" target="_blank" rel="noopener" aria-label="'+k+'">'+(ICON[k]||"")+'</a>'; } });
-        wrap.innerHTML=html;
-      }
-    }).catch(function(){});
-  function subscribe(){
-    var inp=$("ppyNewsEmail"), btn=$("ppyNewsBtn"), msg=$("ppyNewsMsg");
-    if(!inp||!btn) return;
-    var email=(inp.value||"").trim();
-    if(!emailOK(email)){ msg.textContent="Please enter a valid email."; return; }
-    btn.disabled=true; var orig=btn.textContent; btn.textContent="…"; msg.textContent="";
-    fetch(SB+"/rest/v1/newsletter_subscribers",{method:"POST",
-      headers:{apikey:KEY,Authorization:"Bearer "+KEY,"Content-Type":"application/json",Prefer:"return=minimal"},
-      body:JSON.stringify({email:email,source:"site_footer",optin_time:new Date().toISOString()})})
-      .then(function(r){ btn.disabled=false; btn.textContent=orig;
-        if(r.status===201||r.status===204){ msg.textContent="You're in — welcome! 🌸"; inp.value=""; }
-        else if(r.status===409){ msg.textContent="You're already subscribed 💗"; }
-        else { msg.textContent="Hmm, that didn't work. Please try again."; }
-      }).catch(function(){ btn.disabled=false; btn.textContent=orig; msg.textContent="Network error — please try again."; });
-  }
-  var b=$("ppyNewsBtn"); if(b) b.addEventListener("click",subscribe);
-  var e=$("ppyNewsEmail"); if(e) e.addEventListener("keydown",function(ev){ if(ev.key==="Enter") subscribe(); });
 })();
 </script>
 </body>
