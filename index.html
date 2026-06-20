@@ -355,7 +355,7 @@ document.getElementById("search").addEventListener("input",e=>{F.search=e.target
 function darken(hex,f){const m=hex.replace('#','');const n=m.length===3?m.split('').map(c=>c+c).join(''):m;const r=Math.round(parseInt(n.slice(0,2),16)*f),g=Math.round(parseInt(n.slice(2,4),16)*f),b=Math.round(parseInt(n.slice(4,6),16)*f);return '#'+[r,g,b].map(x=>Math.min(255,x).toString(16).padStart(2,'0')).join('');}
 function applyDesign(d){
   if(!d)return;const root=document.documentElement.style;
-  if(d.color_primary){root.setProperty('--rose',d.color_primary);root.setProperty('--roseTitle',d.color_primary);root.setProperty('--roseDeep',darken(d.color_primary,0.82));root.setProperty('--chipFg',darken(d.color_primary,0.82));}
+  if(d.color_primary){root.setProperty('--rose',d.color_primary);root.setProperty('--roseTitle',d.color_primary);root.setProperty('--roseDeep',d.color_primary);root.setProperty('--chipFg',darken(d.color_primary,0.82));}
   if(d.color_secondary){root.setProperty('--sage',d.color_secondary);root.setProperty('--sageFg',darken(d.color_secondary,0.78));}
   if(d.color_page_bg)root.setProperty('--stage',d.color_page_bg);
   if(d.color_surface)root.setProperty('--paper',d.color_surface);
@@ -480,6 +480,14 @@ loadDesign();loadLib();loadAccess();load();
     .then(function(rows){
       var map={}; (rows||[]).forEach(function(x){map[x.key]=x.value||{};});
       var d=map.design||{}, site=map.site||{};
+      (function(){ var R=document.documentElement.style, P=d.color_primary, S=d.color_secondary, f=function(k,v){ if(v) R.setProperty(k,v); };
+        if(P){ ['--ppy-accent','--ppy-accentDk','--rose','--roseDeep','--roseTitle','--clay','--clayDk','--head','--aub'].forEach(function(k){ R.setProperty(k,P); }); }
+        f('--ppy-sage',S); f('--sage',S);
+        f('--ppy-ink',d.color_body_text); f('--ink',d.color_body_text);
+        f('--ppy-bg',d.color_page_bg); f('--bg',d.color_page_bg);
+        f('--ppy-surface',d.color_surface); f('--card',d.color_surface); f('--field',d.color_surface);
+        f('--ppy-muted',d.color_secondary_text); f('--muted',d.color_secondary_text);
+      })();
       if(d.app_name){ document.querySelectorAll(".ppy-brand .wm").forEach(function(e){e.textContent=d.app_name;}); }
       if(d.logo_url){
         document.querySelectorAll(".ppy-brand").forEach(function(b){
