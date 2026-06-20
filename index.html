@@ -169,7 +169,7 @@
 <body>
 <header class="ppy-header" id="ppyHeader">
   <div class="ppy-bar">
-    <a class="ppy-brand" id="ppyBrand" href="https://ppyoga-app.vercel.app">
+    <a class="ppy-brand" id="ppyBrand" href="/">
       <svg class="mark" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
         <path d="M24 7c2.6 3.2 4 6.7 4 10.2 0 3.8-1.6 7.2-4 9.8-2.4-2.6-4-6-4-9.8C20 13.7 21.4 10.2 24 7Z" fill="#C8A0A6"/>
         <path d="M13 14c3.7 1 6.6 2.9 8.6 5.3 2.2 2.6 3.2 5.8 3.1 9-3.4-.6-6.6-2.2-8.8-4.8-2-2.4-3-5.6-2.9-9.5Z" fill="#a8ad91"/>
@@ -181,17 +181,17 @@
       <span class="wm brand">Pure Passion Yoga</span>
     </a>
     <nav class="ppy-nav" id="ppyNav">
-      <a href="https://ppyoga-library.vercel.app">Pose Library</a>
-      <a href="https://ppyoga-builder.vercel.app">Sequence Builder</a>
-      <a data-nav="classes" hidden href="https://ppyoga-app.vercel.app/classes">Classes</a>
-      <a data-nav="challenges" hidden href="https://ppyoga-app.vercel.app/challenges">Challenges</a>
+      <a href="/library">Pose Library</a>
+      <a href="/builder">Sequence Builder</a>
+      <a data-nav="classes" hidden href="/classes">Classes</a>
+      <a data-nav="challenges" hidden href="/challenges">Challenges</a>
       <a href="https://purepassionyoga.com/shop">Shop</a>
       <a href="https://purepassionyoga.com/about">About</a>
     </nav>
     <div class="ppy-right" id="ppyRight">
       <span class="ppy-tier" id="ppyTier" hidden></span>
-      <a class="ppy-btn admin" id="ppyAdmin" hidden href="https://ppyoga-admin.vercel.app">Admin</a>
-      <a class="ppy-btn primary" id="ppyAuth" href="https://ppyoga-profile.vercel.app">Sign in</a>
+      <a class="ppy-btn admin" id="ppyAdmin" hidden href="/admin">Admin</a>
+      <a class="ppy-btn primary" id="ppyAuth" href="/profile">Sign in</a>
       <a class="ppy-btn ghost" id="ppySignout" hidden href="#">Sign out</a>
     </div>
     <button class="ppy-burger" id="ppyBurger" aria-label="Menu">
@@ -199,14 +199,14 @@
     </button>
   </div>
   <div class="ppy-mobile" id="ppyMobile">
-    <a href="https://ppyoga-library.vercel.app">Pose Library</a>
-    <a href="https://ppyoga-builder.vercel.app">Sequence Builder</a>
-    <a data-nav="classes" hidden href="https://ppyoga-app.vercel.app/classes">Classes</a>
-    <a data-nav="challenges" hidden href="https://ppyoga-app.vercel.app/challenges">Challenges</a>
+    <a href="/library">Pose Library</a>
+    <a href="/builder">Sequence Builder</a>
+    <a data-nav="classes" hidden href="/classes">Classes</a>
+    <a data-nav="challenges" hidden href="/challenges">Challenges</a>
     <a href="https://purepassionyoga.com/shop">Shop</a>
     <a href="https://purepassionyoga.com/about">About</a>
-    <a class="admin" id="ppyAdminM" hidden href="https://ppyoga-admin.vercel.app">Admin</a>
-    <a class="up" id="ppyAuthM" href="https://ppyoga-profile.vercel.app">Sign in</a>
+    <a class="admin" id="ppyAdminM" hidden href="/admin">Admin</a>
+    <a class="up" id="ppyAuthM" href="/profile">Sign in</a>
     <a class="admin" id="ppySignoutM" hidden href="#">Sign out</a>
   </div>
 </header>
@@ -410,7 +410,7 @@ function openLock(p){
       <p style="max-width:400px;margin:18px auto 6px;color:var(--body);line-height:1.65">This pose is part of <b>${esc(tierLabel())}</b> access. Explore our ${freeN} free pose${freeN===1?"":"s"} anytime — or unlock all ${total} poses with a membership.</p>
       <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:18px">
         <a class="potd-btn" style="text-decoration:none" href="${esc(WEBSITE)}">View memberships</a>
-        <a class="lockcta" href="https://ppyoga-profile.vercel.app">Sign in</a>
+        <a class="lockcta" href="/profile">Sign in</a>
       </div>
     </div></div></div>`;
   var root=document.getElementById("modalRoot"); root.innerHTML=html;
@@ -432,7 +432,7 @@ loadDesign();loadLib();loadAccess();load();
     </div>
     <div class="ppy-foot-social" id="ppySocial"></div>
     <div class="ppy-foot-links">
-      <a href="https://ppyoga-app.vercel.app/legal.html">Legal</a>
+      <a href="/legal">Legal</a>
       <a href="https://purepassionyoga.com/shop">Shop</a>
       <a href="https://purepassionyoga.com/about">About</a>
     </div>
